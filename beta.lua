@@ -201,7 +201,7 @@ Section = AddSection(Tab1o, {"Cake"})
     
 
      Toggle = AddToggle(Tab2o, {
-      Name = "Lock Bing Mods",
+      Name = "Fast Tele Island [Beta]⚙️",
       Default = false,
       Callback = function()
      end
@@ -274,6 +274,14 @@ Toggle = AddToggle(Tab5o, {
      end
     })
 -----Shop
+    Section = AddSection(Tab6o, {"Fruits"})      
+Toggle = AddToggle(Tab6o, {
+      Name = "Fast Tele Fruits [RisK/Ban]",
+      Default = false,
+      Callback = function()
+     end
+    })
+
     Section = AddSection(Tab6o, {"Haki"})      
     AddButton(Tab6o, {
      Name = "Geppo",
