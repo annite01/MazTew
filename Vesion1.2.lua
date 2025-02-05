@@ -125,6 +125,23 @@ Toggle = AddToggle(Tab1o, {
     
 
 -----Settings
+Dropdown = AddDropdown(Tab2o, {
+     Name = "Select Bring Mod",
+     Options = {"200", "250", "300", "350", "400", "450", "500"},
+     Default = "250",
+     Callback = function()
+     end
+   })
+   
+
+     Toggle = AddToggle(Tab2o, {
+      Name = "Bring Mod (Turn off it Ban)",
+      Default = true,
+      Callback = function()
+     end
+    })
+    
+
      Toggle = AddToggle(Tab2o, {
       Name = "Anti Lag",
       Default = true,
@@ -136,22 +153,6 @@ Toggle = AddToggle(Tab1o, {
      Toggle = AddToggle(Tab2o, {
       Name = "Anti Afk",
       Default = true,
-      Callback = function()
-     end
-    })
-    
-
-     Toggle = AddToggle(Tab2o, {
-      Name = "Bing Mods",
-      Default = true,
-      Callback = function()
-     end
-    })
-    
-
-     Toggle = AddToggle(Tab2o, {
-      Name = "Bypass Tp",
-      Default = false,
       Callback = function()
      end
     })
@@ -232,15 +233,8 @@ Toggle = AddToggle(Tab2o, {
      end
     })
 -----Tele
-    Section = AddSection(Tab4o, {"Sea 1"})      
-    Dropdown = AddDropdown(Tab4o, {
-     Name = "Select",
-     Options = {"WindMill", "Marine", "Middle Town", "Jungle", "Pirate Village", "Desert", "Snow Island", "MarineFord", "Colosseum", "Sky Island 1", "Sky Island 2", "Sky Island 3", "Prison", "Magma Village", "Under Water Island", "Fountain City", "Shank Room", "Mob Island"},
-     Default = "...",
-     Callback = function()
-     end
-   })
-   
+    Section = AddSection(Tab4o, {"Soon..."})      
+    Section = AddSection(Tab4o, {"Update config"})      
 -----Raid
     Section = AddSection(Tab5o, {"Raid"})      
     Dropdown = AddDropdown(Tab5o, {
@@ -385,7 +379,7 @@ Toggle = AddToggle(Tab5o, {
 -----Race
     Section = AddSection(Tab7o, {"Soon..."})      
 -----Sea
-
+    Section = AddSection(Tab8o, {"Soon..."})      
 -----Misc
     Section = AddSection(Tab9o, {"Rejoin"})      
     AddButton(Tab9o, {
