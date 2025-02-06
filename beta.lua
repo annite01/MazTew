@@ -2,7 +2,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        local Window = MakeWindow({
          Hub = {
-         Title = "MazTew Hub - Blox Fruits Beta | by Maz",
+         Title = "MazTew Hub [ Beta ] | by Maz",
          Animation = "MazTew Hub"
          },
         Key = {
@@ -24,7 +24,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
        Image = "http://www.roblox.com/asset/?id=16513855098",
        Size = {41, 40},
        Color = Color3.fromRGB(10, 10, 10),
-       Corner = false,
+       Corner = true,
        Stroke = true,
        StrokeColor = Color3.fromRGB(255, 10, 10)
       })
@@ -143,6 +143,14 @@ Section = AddSection(Tab1o, {"Bone🦴"})
     
 
      Toggle = AddToggle(Tab1o, {
+      Name = "Farm Mastery Fruits (Bone) [Beta]⚙️",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
+
+     Toggle = AddToggle(Tab1o, {
       Name = "Random Bone",
       Default = false,
       Callback = function()
@@ -226,15 +234,7 @@ Toggle = AddToggle(Tab3o, {
      end
     })
 -----Tele
-    Section = AddSection(Tab4o, {"Sea 1"})      
-    Dropdown = AddDropdown(Tab4o, {
-     Name = "Select",
-     Options = {"WindMill", "Marine", "Middle Town", "Jungle", "Pirate Village", "Desert", "Snow Island", "MarineFord", "Colosseum", "Sky Island 1", "Sky Island 2", "Sky Island 3", "Prison", "Magma Village", "Under Water Island", "Fountain City", "Shank Room", "Mob Island"},
-     Default = "...",
-     Callback = function()
-     end
-   })
-   
+    Section = AddSection(Tab4o, {"Config Update Pls 🙇 "})      
 -----Raid
     Section = AddSection(Tab5o, {"Raid"})      
     Dropdown = AddDropdown(Tab5o, {
