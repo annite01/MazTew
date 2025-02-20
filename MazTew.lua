@@ -31,6 +31,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       
 ------ Tab
      local Tab1o = MakeTab({Name = "Main"})
+     local Tab3o = MakeTab({Name = "Stats"})
      local Tab4o = MakeTab({Name = "Teleport"})
      local Tab5o = MakeTab({Name = "Dungeon"})
      local Tab6o = MakeTab({Name = "Shop"})
@@ -104,7 +105,7 @@ Toggle = Add
   })
 
      Toggle = AddToggle(Tab1o, {
-      Name = "Farm Chest Tp [Rick Kick]",
+      Name = "Stop Item Key & Cup",
       Default = false,
       Callback = function()
   end
@@ -129,6 +130,31 @@ Toggle = Add
     Callback = function()
   end
   })
+
+    Section = AddSection(Tab1o, {"Haki Ken"})      
+     Toggle = AddToggle(Tab1o, {
+      Name = "Aotu Up Ken V2",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
+
+     Toggle = AddToggle(Tab1o, {
+      Name = "Farm Ken",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
+
+     Toggle = AddToggle(Tab1o, {
+      Name = "Farm Ken Hop",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
 
 Section = AddSection(Tab1o, {"Farm Mastery"})      
      Toggle = AddToggle(Tab1o, {
@@ -289,8 +315,8 @@ Dropdown = AddDropdown(Tab2o, {
     
 
 -----Stats
-    Section = AddSection(Tab2o, {"Stats"})      
-Dropdown = AddDropdown(Tab2o, {
+    Section = AddSection(Tab3o, {"Stats"})      
+Dropdown = AddDropdown(Tab3o, {
      Name = "Select",
      Options = {"Mele", "Sword", "Gun", "Blox Fruits"},
      Default = "...",
@@ -299,7 +325,7 @@ Dropdown = AddDropdown(Tab2o, {
    })
    
 
-Toggle = AddToggle(Tab2o, {
+Toggle = AddToggle(Tab3o, {
       Name = "Aotu Stats",
       Default = false,
       Callback = function()
@@ -333,25 +359,27 @@ Toggle = AddToggle(Tab5o, {
     })
 
 Toggle = AddToggle(Tab5o, {
-      Name = "Kill Aura",
+      Name = "Aworking Fruits",
+      Default = false,
+      Callback = function()
+     end
+    })
+
+    Section = AddSection(Tab5o, {"Law"})      
+Toggle = AddToggle(Tab5o, {
+      Name = "Kill Law",
       Default = false,
       Callback = function()
      end
     })
 
 Toggle = AddToggle(Tab5o, {
-      Name = "Next Island",
+      Name = "Start Raid Law & Buy Chip Law",
       Default = false,
       Callback = function()
      end
     })
 
-Toggle = AddToggle(Tab5o, {
-      Name = "Attach Mods",
-      Default = false,
-      Callback = function()
-     end
-    })
 -----Shop
     Section = AddSection(Tab6o, {"Fruits"})      
 Toggle = AddToggle(Tab6o, {
@@ -467,7 +495,6 @@ Toggle = AddToggle(Tab6o, {
     Section = AddSection(Tab7o, {"Soon..."})      
 -----Sea
     Section = AddSection(Tab8o, {"Sea"})      
-    Section = AddSection(Tab8o, {"Sea Even"})      
 Toggle = AddToggle(Tab8o, {
       Name = "Start Farm",
       Default = false,
@@ -519,6 +546,13 @@ Toggle = AddToggle(Tab8o, {
      Toggle = AddToggle(Tab9o, {
       Name = "Anti Afk",
       Default = true,
+      Callback = function()
+     end
+    })
+
+     Toggle = AddToggle(Tab9o, {
+      Name = "Anti Bugs Farm [Beta]",
+      Default = false,
       Callback = function()
      end
     })
