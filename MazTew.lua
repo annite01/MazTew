@@ -30,15 +30,15 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "Main"})
-     local Tab3o = MakeTab({Name = "Stats"})
-     local Tab4o = MakeTab({Name = "Teleport"})
-     local Tab5o = MakeTab({Name = "Dungeon"})
-     local Tab6o = MakeTab({Name = "Shop"})
-     local Tab7o = MakeTab({Name = "Race V4"})
-     local Tab8o = MakeTab({Name = "Sea Even"})
-     local Tab9o = MakeTab({Name = "Misc"})
-     local Tab2o = MakeTab({Name = "Settings"})
+     local Tab1o = MakeTab({Name = "Tap Main"})
+     local Tab3o = MakeTab({Name = "Tap Stats"})
+     local Tab4o = MakeTab({Name = "Tap Teleport"})
+     local Tab5o = MakeTab({Name = "Tap Dungeon"})
+     local Tab6o = MakeTab({Name = "Tap Shop"})
+     local Tab7o = MakeTab({Name = "Tap Race V4"})
+     local Tab8o = MakeTab({Name = "Tap Sea Even"})
+     local Tab9o = MakeTab({Name = "Tap Misc"})
+     local Tab2o = MakeTab({Name = "Tap Settings"})
 ----- Dropdown 
 
   Dropdown = AddDropdown(Tab1o, {
