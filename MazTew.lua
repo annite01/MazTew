@@ -2,7 +2,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        local Window = MakeWindow({
          Hub = {
-         Title = "MazTew Loli Hub | Blox Fruits",
+         Title = "MazTew Loli Hub | Blox Fruits              VIET NAM LOVE",
          Animation = "MazTew Loli Hub"
          },
         Key = {
@@ -141,15 +141,7 @@ Toggle = Add
     
 
      Toggle = AddToggle(Tab1o, {
-      Name = "Farm Ken",
-      Default = false,
-      Callback = function()
-     end
-    })
-    
-
-     Toggle = AddToggle(Tab1o, {
-      Name = "Farm Ken Hop",
+      Name = "Farm Ken & Ken Hop",
       Default = false,
       Callback = function()
      end
@@ -332,7 +324,27 @@ Toggle = AddToggle(Tab3o, {
      end
     })
 -----Tele
-    Section = AddSection(Tab4o, {"Soon!!"})      
+    Section = AddSection(Tab4o, {"Sea 1"})      
+    AddButton(Tab4o, {
+     Name = "Teleport Sea1",
+    Callback = function()
+  end
+  })
+
+    Section = AddSection(Tab4o, {"Sea 2"})      
+    AddButton(Tab4o, {
+     Name = "Teleport Sea2",
+    Callback = function()
+  end
+  })
+
+    Section = AddSection(Tab4o, {"Sea 3"})      
+    AddButton(Tab4o, {
+     Name = "Teleport Sea3",
+    Callback = function()
+  end
+  })
+
 -----Raid
     Section = AddSection(Tab5o, {"Raid"})      
     Dropdown = AddDropdown(Tab5o, {
@@ -384,6 +396,27 @@ Toggle = AddToggle(Tab5o, {
     Section = AddSection(Tab6o, {"Fruits"})      
 Toggle = AddToggle(Tab6o, {
       Name = "Aotu Random Fruits",
+      Default = false,
+      Callback = function()
+     end
+    })
+
+Toggle = AddToggle(Tab6o, {
+      Name = "Aotu Store Fruits",
+      Default = false,
+      Callback = function()
+     end
+    })
+
+Toggle = AddToggle(Tab6o, {
+      Name = "Teleport Fruits Find",
+      Default = false,
+      Callback = function()
+     end
+    })
+
+Toggle = AddToggle(Tab6o, {
+      Name = "Door Fruits",
       Default = false,
       Callback = function()
      end
@@ -491,12 +524,79 @@ Toggle = AddToggle(Tab6o, {
     Callback = function()
   end
   })
+
+    Section = AddSection(Tab6o, {"Race"})      
+    AddButton(Tab6o, {
+     Name = "Race Ghoul",
+    Callback = function()
+  end
+  })
+
+    AddButton(Tab6o, {
+     Name = "Race Cyborg [2k5 Fragment]",
+    Callback = function()
+  end
+  })
+
+    AddButton(Tab6o, {
+     Name = "Race Dragon",
+    Callback = function()
+  end
+  })
 -----Race
     Section = AddSection(Tab7o, {"Soon..."})      
 -----Sea
     Section = AddSection(Tab8o, {"Sea"})      
+    Section = AddSection(Tab2o, {"Settings Evens"})      
+     Toggle = AddToggle(Tab2o, {
+      Name = "Sea",
+      Default = true,
+      Callback = function()
+     end
+    })
+    
+
+     Toggle = AddToggle(Tab2o, {
+      Name = "Pilanha",
+      Default = true,
+      Callback = function()
+     end
+    })
+    
+
+     Toggle = AddToggle(Tab2o, {
+      Name = "Shank",
+      Default = true,
+      Callback = function()
+     end
+    })
+    
+
+     Toggle = AddToggle(Tab2o, {
+      Name = "Shank Boss",
+      Default = true,
+      Callback = function()
+     end
+    })
+    
+
+     Toggle = AddToggle(Tab2o, {
+      Name = "Boat Ghost & Boat Normal",
+      Default = true,
+      Callback = function()
+     end
+    })
+    
+
 Toggle = AddToggle(Tab8o, {
-      Name = "Start Farm",
+      Name = "Start Farm Evens",
+      Default = false,
+      Callback = function()
+     end
+    })
+
+Toggle = AddToggle(Tab8o, {
+      Name = "Use Gun Dragon[Boat or Shank]",
       Default = false,
       Callback = function()
      end
@@ -546,13 +646,6 @@ Toggle = AddToggle(Tab8o, {
      Toggle = AddToggle(Tab9o, {
       Name = "Anti Afk",
       Default = true,
-      Callback = function()
-     end
-    })
-
-     Toggle = AddToggle(Tab9o, {
-      Name = "Anti Bugs Farm [Beta]",
-      Default = false,
       Callback = function()
      end
     })
