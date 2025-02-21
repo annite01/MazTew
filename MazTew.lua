@@ -602,6 +602,43 @@ Toggle = AddToggle(Tab8o, {
      end
     })
 
+    Section = AddSection(Tab8o, {"Kitsune"})      
+Toggle = AddToggle(Tab8o, {
+      Name = "Summon Kitsune",
+      Default = false,
+      Callback = function()
+     end
+    })
+
+Toggle = AddToggle(Tab8o, {
+      Name = "Trade Item Kitsune",
+      Default = false,
+      Callback = function()
+     end
+    })
+
+    Section = AddSection(Tab8o, {"Leviathan"})      
+Toggle = AddToggle(Tab8o, {
+      Name = "Find Leviathan",
+      Default = false,
+      Callback = function()
+     end
+    })
+
+Toggle = AddToggle(Tab8o, {
+      Name = "Use Gun Dragon Kill Leviathan [Beta]",
+      Default = false,
+      Callback = function()
+     end
+    })
+
+Toggle = AddToggle(Tab8o, {
+      Name = "Buy Chip Leviathan",
+      Default = false,
+      Callback = function()
+     end
+    })
+
 -----Misc
     Section = AddSection(Tab9o, {"Rejoin"})      
     AddButton(Tab9o, {
