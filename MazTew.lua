@@ -22,7 +22,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 
        MinimizeButton({
        Image = "http://www.roblox.com/asset/?id=115393038747995",
-       Size = {31, 30},
+       Size = {51, 40},
        Color = Color3.fromRGB(10, 15, 15),
        Corner = true,
        Stroke = true,
@@ -76,13 +76,6 @@ Section = AddSection(Tab1o, {"Farm Level"})
 Toggle = Add
      Toggle = AddToggle(Tab1o, {
       Name = "Start Farm",
-      Default = false,
-      Callback = function()
-  end
-  })
-
-     Toggle = AddToggle(Tab1o, {
-      Name = "Farm Valentino💞",
       Default = false,
       Callback = function()
   end
@@ -250,7 +243,7 @@ Dropdown = AddDropdown(Tab2o, {
     
 
      Toggle = AddToggle(Tab2o, {
-      Name = "Attch Kata [Beta]",
+      Name = "Attach Kata [Beta]",
       Default = false,
       Callback = function()
      end
@@ -544,7 +537,28 @@ Toggle = AddToggle(Tab6o, {
   end
   })
 -----Race
-    Section = AddSection(Tab7o, {"Soon..."})      
+    Section = AddSection(Tab7o, {"Race"})      
+     Toggle = AddToggle(Tab7o, {
+      Name = "Look Moon🌚",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
+     Toggle = AddToggle(Tab7o, {
+      Name = "Full Level [Done Turn Off]",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
+     Toggle = AddToggle(Tab7o, {
+      Name = "Tween Gear",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
 -----Sea
     Section = AddSection(Tab8o, {"Sea"})      
     Section = AddSection(Tab2o, {"Settings Evens"})      
@@ -682,6 +696,13 @@ Toggle = AddToggle(Tab8o, {
 
      Toggle = AddToggle(Tab9o, {
       Name = "Anti Afk",
+      Default = true,
+      Callback = function()
+     end
+    })
+
+     Toggle = AddToggle(Tab9o, {
+      Name = "Anti Rest ",
       Default = true,
       Callback = function()
      end
