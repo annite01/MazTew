@@ -3,25 +3,25 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "MazTew Loli Hub | Blox Fruits [Third_Sea]",
-    SubTitle = "By Maz",
+    Title = "MazTew Loli Hub | Blox Fruits",
+    SubTitle = "By dat_maz🏝️",
     TabWidth = 130,
     Size = UDim2.fromOffset(530, 300),
-    Acrylic = false,
+    Acrylic = true,
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Setting = Window:AddTab({ Title = "Settings", Icon = "" }),
-    Main = Window:AddTab({ Title = "Main", Icon = "" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "" }),
-    Fruit = Window:AddTab({ Title = "Fruit", Icon = "" }),
-    Race = Window:AddTab({ Title = "Race", Icon = "" }),
-    Even = Window:AddTab({ Title = "Sea Even", Icon = "" }),
-    Raid = Window:AddTab({ Title = "Raid", Icon = "" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "" }),
-	Misc = Window:AddTab({ Title = "Misc", Icon = "" }),
-    Player = Window:AddTab({ Title = "PvP", Icon = "" }),
+    Setting = Window:AddTab({ Title = "Tap Settings", Icon = "" }),
+    Main = Window:AddTab({ Title = "Tap Main", Icon = "" }),
+    Teleport = Window:AddTab({ Title = "Tap Teleport", Icon = "" }),
+    Fruit = Window:AddTab({ Title = "Tap Fruit", Icon = "" }),
+    Race = Window:AddTab({ Title = "Tap Race", Icon = "" }),
+    Even = Window:AddTab({ Title = "Tap Sea Even", Icon = "" }),
+    Raid = Window:AddTab({ Title = "Tap Raid", Icon = "" }),
+    Shop = Window:AddTab({ Title = "Tap Shop", Icon = "" }),
+	Misc = Window:AddTab({ Title = "Tap Misc", Icon = "" }),
+    Player = Window:AddTab({ Title = "Tap PvP", Icon = "" }),
 }
 local Options = Fluent.Options
 do
@@ -36,11 +36,11 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 	game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
 
-local a=Instance.new("ScreenGui")local b=Instance.new("ImageButton")local c=Instance.new("UICorner")a.Parent=game.Players.LocalPlayer:WaitForChild("PlayerGui")a.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;b.Parent=a;b.BackgroundColor3=Color3.fromRGB(255,255,255)b.BorderColor3=Color3.fromRGB(0,0,0)b.BorderSizePixel=0;b.Position=UDim2.new(0.103761353,0,0.214939028,0)b.Size=UDim2.new(0,48,0,45)b.Image="rbxassetid://119468605780207"c.Parent=b;local function d()local e=Instance.new('LocalScript',b)e.Parent.MouseButton1Click:Connect(function()game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.End,false,game)end)end;coroutine.wrap(d)()
+local a=Instance.new("ScreenGui")local b=Instance.new("ImageButton")local c=Instance.new("UICorner")a.Parent=game.Players.LocalPlayer:WaitForChild("PlayerGui")a.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;b.Parent=a;b.BackgroundColor3=Color3.fromRGB(255,255,255)b.BorderColor3=Color3.fromRGB(0,0,0)b.BorderSizePixel=0;b.Position=UDim2.new(0.103753,0,0.21428,0)b.Size=UDim2.new(0,48,0,45)b.Image="rbxassetid://119468605780207"c.Parent=b;local function d()local e=Instance.new('LocalScript',b)e.Parent.MouseButton1Click:Connect(function()game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.End,false,game)end)end;coroutine.wrap(d)()
 
-First_Sea = false
-Second_Sea = false
-Third_Sea = false
+First_Sea = true
+Second_Sea = true
+Third_Sea = true
 local placeId = game.PlaceId
 if placeId == 2753915549 then
 First_Sea = true
@@ -2108,9 +2108,9 @@ end
 function Tween(Pos)
     Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
     if game.Players.LocalPlayer.Character.Humanoid.Sit == true then game.Players.LocalPlayer.Character.Humanoid.Sit = false end
-    pcall(function() tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/300, Enum.EasingStyle.Linear),{CFrame = Pos}) end)
+    pcall(function() tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/380, Enum.EasingStyle.Linear),{CFrame = Pos}) end)
     tween:Play()
-    if Distance <= 340 then
+    if Distance <= 380 then
         tween:Cancel()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
     end
@@ -2396,7 +2396,7 @@ _G.FastAttack = true
 
     local DropdownSelectWeapon = Tabs.Setting:AddDropdown("DropdownSelectWeapon", {
         Title = "Weapon",
-        Values = {'Melee','Sword','Blox Fruit'},
+        Values = {'Melee','Sword'},
         Multi = false,
         Default = 1,
     })
@@ -2445,7 +2445,7 @@ _G.FastAttack = true
     end)
 
 
-    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "Farm Level", Default = false })
+    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "Farm Level [Rick Bugs]", Default = false })
     ToggleLevel:OnChanged(function(Value)
         _G.LevelFarm = Value
     end)
@@ -4225,7 +4225,7 @@ Camera:Stop()
                         if _G.BringMob and bringmob then
                             if v.Name == MonFarm and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
                                 if v.Name == "Factory Staff" then
-                                    if (v.HumanoidRootPart.Position - FarmPos.Position).Magnitude <= 275 then
+                                    if (v.HumanoidRootPart.Position - FarmPos.Position).Magnitude <= 250 then
                                         v.Head.CanCollide = false
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(1, 1, 1)
@@ -4233,7 +4233,7 @@ Camera:Stop()
                                         sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
                                     end
                                 elseif v.Name == MonFarm then
-                                    if (v.HumanoidRootPart.Position - FarmPos.Position).Magnitude <= 275 then
+                                    if (v.HumanoidRootPart.Position - FarmPos.Position).Magnitude <= 250 then
                                         v.Head.CanCollide = false
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(1, 1, 1)
@@ -4401,7 +4401,7 @@ SliderPosX:SetValue(15)
 local SliderPosY = Tabs.Setting:AddSlider("SliderPosY", {
     Title = "Pos Y",
     Description = "",
-    Default = 15,
+    Default = 0,
     Min = -60,
     Max = 60,
     Rounding = 1,
@@ -4412,7 +4412,7 @@ local SliderPosY = Tabs.Setting:AddSlider("SliderPosY", {
 SliderPosY:OnChanged(function(Value)
   posY = Value
 end)
-SliderPosY:SetValue(15)
+SliderPosY:SetValue(0)
 
 local SliderPosZ = Tabs.Setting:AddSlider("SliderPosZ", {
     Title = "Pos Z",
